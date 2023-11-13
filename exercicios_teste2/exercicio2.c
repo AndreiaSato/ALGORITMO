@@ -2,7 +2,7 @@
 #include <math.h>
 
 /* 1. Escreva um programa em C que recebe dois números do usuário e mostre qual
-deles é o maior. */
+deles é o maior. */,
 /* int main(){
     int num1, num2;
     printf("Digite dois numeros: ");
@@ -27,7 +27,7 @@ printf("Informe um numero: ");
 scanf("%d", &num);
 raiz = sqrt (num);
 quadrado = pow (num, 2);
-if (num %2 == 0){
+if (num >= 0){
     printf("A raiz quadrada de %d eh: %.2lf", num, raiz);
 }
 else{

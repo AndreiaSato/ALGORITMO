@@ -212,6 +212,7 @@ int main(){
         else if (opcao == 4){
                 cal += 65;
         }
+
         printf(" O total de calorias a ser consumida eh: %d cal", cal);
 
         return 0;

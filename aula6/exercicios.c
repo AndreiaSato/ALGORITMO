@@ -133,7 +133,7 @@ está entre 1 e 12, e se o dia existe naquele mês. Note que fevereiro tem 29 di
     printf("Informe sua data de nascimento no formato de dd/mm/aa:  ");
     scanf("%d", &data);
    
-    dia = (data / 1000000) % 100;
+    dia = (data / 1000000) ;
     mes = (data / 10000) % 100;
     ano = data % 10000;
     printf("A data em DD/MM/AAAA eh %d/%d/%d.\n", dia, mes, ano);
@@ -151,7 +151,7 @@ está entre 1 e 12, e se o dia existe naquele mês. Note que fevereiro tem 29 di
         }  
         
        else{
-           if (dia >=1 && dia <= 28 && mes == 2){ */  /* ANO NÃO BISSEXTO*/
+           if (dia >=1 && dia <= 28 && mes == 2){   /* ANO NÃO BISSEXTO*/
                  printf('Data valida!');
             }
             else if (mes != 2 && dia >= 1 && dia <=31){
@@ -166,4 +166,4 @@ está entre 1 e 12, e se o dia existe naquele mês. Note que fevereiro tem 29 di
     }
 return 0;
 
-} */ 
+} 

@@ -194,13 +194,10 @@ int main(){
     printf("Informe sua data de nascimento no formato de dd/mm/aa:  ");
     scanf("%d", &data);
    
-    ano=valor%100;
-    valor-=ano;
-    valor/=100;
-    mes=valor%100;
-    valor-=mes;
-    valor/=100;
-    dia=valor%100;
+   dia = data / 1000000;
+   mes = (data/10000)%100;
+   ano = data % 10000;
+   printf("%d/%d/%d", dia, mes, ano);
 
 return 0;
 }
