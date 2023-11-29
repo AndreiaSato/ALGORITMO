@@ -2,7 +2,7 @@
  struct produto{
 	char nome[50];
 	float preco[2];
- } leite[3];
+ } prod[3];
 
 void nome_preco();
 void var_precos();
@@ -55,14 +55,14 @@ return 0;
 void nome_preco(){
 	for(int i=0; i < 3; i++){
 		printf("Informe o Nome da amostra %d: ", i+1);
-		scanf(" %[^\n]s", &leite[i].nome);
+		scanf(" %[^\n]s", &prod[i].nome);
 		fflush(stdin);
 		
 		printf("Informe o valor da amostra no primeiro mes: R$ ");
-		scanf("%f",&leite[i].preco[0]);
+		scanf("%f",&prod[i].preco[0]);
 	
 	    printf("Informe o valor da amostra no segundo mes: R$ ");
-		scanf("%f",&leite[i].preco[1]);
+		scanf("%f",&prod[i].preco[1]);
 		}
 }
 
@@ -81,10 +81,10 @@ void var_positiva(){
 	    float variacaoP;
 
 	for(int i=0; i<3; i++){
-		variacaoP = ((leite[i].preco[1] - leite[i].preco[0])/leite[i].preco[0])*100;
+		variacaoP = ((prod[i].preco[1] - prod[i].preco[0])/prod[i].preco[0])*100;
      
 			if (variacaoP >= 0){
-				printf("A variacao positiva de %s eh %2.f %%\n", leite[i].nome, variacaoP);
+				printf("A variacao positiva de %s eh %2.f %%\n", prod[i].nome, variacaoP);
 			}
 	}
 }
@@ -92,11 +92,11 @@ void var_negativa(){
 		float variacaoP;
 
 	for(int i=0; i<3; i++){
-		variacaoP = ((leite[i].preco[1] - leite[i].preco[0])/leite[i].preco[0])*100;
+		variacaoP = ((prod[i].preco[1] - prod[i].preco[0])/prod[i].preco[0])*100;
     
 			if (variacaoP <= 0){
 				 
-				printf("A variacao negativa de %s eh %2.f %%\n", leite[i].nome, variacaoP);
+				printf("A variacao negativa de %s eh %2.f %%\n", prod[i].nome, variacaoP);
 			}
 	}
 	}
